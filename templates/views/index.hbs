@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/cliently.png">
+
+</head>
+
+<body>
+    <div class="main-content">
+        <h1>{{title}}</h1>
+    
+        {{>header}}
+
+        <form id="weatherForm"> 
+            <input id="address" placeholder="Address">
+            <button>Search</button>
+        </form>
+        
+        <p id="resultBox"></p>
+
+    </div>
+
+    {{>footer}}
+    <script src="/js/feapp.js"></script>
+</body>
+
+</html>
