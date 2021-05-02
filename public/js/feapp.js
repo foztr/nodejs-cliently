@@ -8,7 +8,7 @@ weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
     if(address.value){
-        fetch("http://localhost:3000/location?address="+address.value).then((response) => {
+        fetch("/location?address="+address.value).then((response) => {
 
             response.json().then((data) => {
         
